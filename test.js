@@ -1,4 +1,4 @@
-const checkConsecutive = require("./index.js");
+const checkConsecutive = require("./sergio_estrella-prueba.js");
 
 describe("Should be consecutive arrays", () => {
   it("Not removes anything", () => {

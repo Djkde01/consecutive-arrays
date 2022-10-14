@@ -7,7 +7,7 @@
 
 const checkConsecutive = (numbersArray) => {
   let previousNumber = 0;
-  let timesRemoved = 0;
+  let alreadyRemoved = false;
   const result = {
     isConsecutive: true,
     array: [],
@@ -18,8 +18,8 @@ const checkConsecutive = (numbersArray) => {
       result.array.push(numbersArray[i]);
       previousNumber = numbersArray[i];
     } else {
-      if (timesRemoved === 0) {
-        timesRemoved += 1;
+      if (!alreadyRemoved) {
+        alreadyRemoved = true;
       } else {
         result.isConsecutive = false;
         result.array = numbersArray;
