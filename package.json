@@ -1,0 +1,24 @@
+{
+  "name": "consecutive-arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json",
+      "prettier",
+      "jest"
+    ]
+  },
+  "author": "djkde.co@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^29.1.2",
+    "standard": "^17.0.0"
+  }
+}
